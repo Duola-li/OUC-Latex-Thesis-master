@@ -1,0 +1,204 @@
+% 中文编译，编译器为 XeLatex
+
+%\special{dvipdfmx:config z 0} 	%快速编译模式，取消PDF压缩，编译速度起飞！但是文件体积巨大，正式版去掉这个！！
+\documentclass[pdf]{oucthesis}  
+%\documentclass[print]{oucthesis}  
+%\documentclass[pdf,count]{oucthesis}
+
+% [pdf|print, [count], [enmac]]
+% pdf: 便于阅读的电子版，去除掉多余的空白页，加入超链接等。
+% print：打印版本，添加空白页，便于双面打印，禁用超链接。
+% count: 字数统计，使用此功能，请在编译时，添加 --shell-escape 选项，并且主文件必须为 main.tex。
+% enmac: 可选，当你使用的是英文版 macOS，设置此选项以正确设置字体。
+% PDF版和print切换编译时可能会报错，只需要注释掉\include的子章节，先编译main.tex，再逐一include即可。
+
+
+% ========================================
+%｜             论文信息填写               ｜
+% ========================================
+\title{基于唱跳说唱篮球的舞蹈练习}
+\entitle{How to Master Singing, Rap, Dancing, and Basketball}
+\author{蔡徐坤}
+\advisor{ABC}
+\keywords{流行，舞蹈}
+\enkeywords{Pop, Dancing}
+\mythanks{谨以此文献给我的父母、老师和朋友们！}
+
+% ========================================
+%｜                包引用                 ｜
+% ========================================
+\usepackage{booktabs}
+\usepackage{amsthm}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+%octan3 下面是我自己用到的，大家可以自行删减
+\usepackage{subfigure}		%子图
+\usepackage{rotating}     	%使用竖表sidewaystable（旋转过长的表格）
+\usepackage{makecell}		%表内换行
+\usepackage{enumerate}		%有序列表
+\usepackage{adjustbox}		%过长的表格整页居中
+
+%octan3 下面是我自己定义的“定义”和“证明”环境
+%\newtheorem{defn}{\textbf{定义}}
+\newtheorem{defn}{\hspace{2em}\textbf{定义}}
+\newtheorem{proof2}{\textbf{证明}}
+
+% ========================================
+%｜               内容区域                 ｜
+% ========================================
+\begin{document}
+% ========================================
+%｜              创建前置页                ｜
+% ========================================
+\makeprepage
+
+% ========================================
+%｜               中文摘要                 ｜
+% ========================================
+\begin{abstract}
+%2句话描述背景，3-4句话描述存在的问题，然后是对问题的解决思路。
+
+出道之后，蔡徐坤大部分精力都投身于新歌的创作和专辑的打造。彼时，他需要随着NINE PERCENT在三个月内完成17场大型巡回见面会，因此写歌的时间必须“挤出来”用。洗澡时、做造型时、飞机上、两个行程间或吃饭的空隙，只要有手机、旋律，任何地方都是他的创作场所；偶尔待在录音室里，甚至成为他的喘息时间。去年，新京报记者见到他时正值午饭，化妆室里传来哼鸣声，“采访完的休息时间，我都可以写一段词。我还年轻，我觉得这都OK。”他曾表示。
+
+《偶像练习生》的首次登台，作为个人练习生，蔡徐坤是唯一一个大胆选择自己原创歌曲上台的人。一首《I Wanna Get Love》，蔡徐坤并不吝惜在舞台上展现性感、自如、洒脱的表演方式，“只有在舞台上，我才是真正的自己。”录制前，蔡徐坤耗费半个月精心编排新的舞蹈，在录音室反复练唱，连出场造型都精心设计了多种方案。那场表演，他成为全场第一个拿A等级的选手。然而节目播出后，外界焦点却集中于他的装扮。“重新再表演一次，我还是会这样选择。”在他看来，“性感”符合这首歌的表达，也是属于蔡徐坤的风格，舞台之外的事，他都不在意。
+
+从小，蔡徐坤就表现出音乐天赋。家中有不少人从事与艺术相关的工作。在他一岁左右，会说整句话的时候，就开始唱歌了，见到麦克风就会跑过去抓起来哼唱，一听到音乐会情不自禁地跟着节奏摇摆。
+
+
+
+
+\end{abstract}
+
+% ========================================
+%｜               英文摘要                 ｜
+% ========================================
+\begin{enabstract}
+	
+After his debut, Cai devoted most of his energy to the creation of new songs and the creation of albums. At that time, he needed to complete 17 large-scale tour meetings with nine percent in three months, so the time for writing songs had to be "squeezed out". When bathing, modeling, on the plane, between two itineraries or between meals, as long as there is a mobile phone and melody, anywhere is his creation place; occasionally stay in the studio, even become his breathing time. Last year, when the reporter of the Beijing News saw him, it was lunch time, and there was a hum in the dressing room. "I can write a paragraph during the rest time after the interview. I'm still young. I think it's OK. " He once said.
+
+As an individual trainee, Cai Xukun is the only one who boldly chooses his own original songs to appear on the stage. "I wanna get love", Cai Xukun is not reluctant to show sexy, free and easy performance on the stage, "only on the stage, I am the real myself." Before recording, Cai Xukun spent half a month elaborately choreographing new dances, repeatedly practicing singing in the studio, and elaborately designed a variety of schemes even for appearance modeling. In that performance, he became the first player to take A-level. However, after the program was broadcast, the focus of the outside world was on his costume. "Do it again, I'll still do it." In his opinion, "sexy" is in line with the expression of this song, and also belongs to CAI Xukun's style. He doesn't care about things outside the stage.
+
+Since childhood, Cai Xukun has shown his musical talent. Many people in the family are engaged in art related work. When he was about one year old and could speak the whole sentence, he began to sing. When he saw the microphone, he would run to it and hum. When he heard the concert, he could not help but swing with the rhythm.
+
+
+\end{enabstract}
+
+
+% ========================================
+%｜                空白页                 ｜
+%｜ 在打印版中，要求所有章节首页都是奇数页。 ｜
+%｜ \myemptypage 在正文前插入无页码空白页。 ｜
+% ========================================
+%｜ 在正文中插入带页码空白页，可用如下三行。 ｜
+%｜ 				\newpage                ｜ 
+%｜ 				\clearpage				｜ 
+%｜ 				$ \  $					｜ 
+% ========================================
+
+%\myemptypage   %不带页码的空白页命令
+
+% ========================================
+%｜                 目录                  ｜
+% ========================================
+\tableofcontents
+
+
+
+% ========================================
+%｜                 正文                  ｜
+%｜      注意！！\mainmatter 设置正文格式   ｜
+% ========================================
+\mainmatter
+
+
+\include{includes/section_01}
+\include{includes/section_02}
+\include{includes/section_03}
+
+%查重版正文：使用removeTable_Pic.py工具注释掉图表的tex文件
+%\include{includes/section_01_noTP}
+%\include{includes/section_02_noTP}
+%\include{includes/section_03_noTP}
+
+
+
+
+% ========================================
+%｜                 文献                  ｜
+% ========================================
+\bibliographystyle{oucauthoryear}
+\bibliography{cite}
+
+%%% 查重用，后面可以都截住
+%\end{document}
+
+
+% ========================================
+%｜            附录 缩略语说明             ｜
+% ========================================
+\begin{myappendix}
+%%%%%   一页放不下的话就拆成两页，两个表，用\clearpage分页。
+\begin{table}[!hbp]
+	\begin{tabular}{p{2cm}p{12cm}}
+		KUN & XuKun Cai，蔡徐坤，中国内地男歌手、演员、原创音乐制作人 [1] 、MV导演   \\
+		小黑子 & 蔡徐坤黑粉   \\
+		鸡你太美 & 只因你太美  \\
+		xswl & 笑死我了  \\
+
+	\end{tabular}
+\end{table}
+
+
+
+\end{myappendix}
+
+
+
+% ========================================
+%｜                 致谢                  ｜
+% ========================================
+\begin{ackonwlegmentback}
+在论文的最后我想向所有帮助支持过我的亲人、朋友、老师致以崇高的敬意和真诚的感谢，感谢你们在我三年研究生的生活中给予的生活和工作的支持。
+
+2017年9月，我开始了研究生生活，时间飞逝，我即将离开学校，走向社会，在此期间，我要特别感谢XX教授，是两位老师带我进入了XXXX的世界；特别感谢实验室的同学，在我碰到问题的时候伸出援手，帮助我解决问题；最后我要特别感谢我的父母，感谢你们对我学习生涯的资助，感谢你们对我未来决定的支持。
+
+\end{ackonwlegmentback}
+
+% ========================================
+%｜                 简历                  ｜
+% ========================================
+\begin{profile}
+\section*{个人简历}
+
+2000年0月0日出生于XX省XX市(县)。
+
+2001年9月考入XX大学XX专业，2002年7月本科毕业并获得工学学士学位。
+
+2002年9月考入中国海洋大学XX学院XX专业攻读硕士学位至今。
+
+\section*{发表的学术论文}
+\noindent[1] Xukun Cai, et al., Singing, Dancing, Rap, Basketball. ABC. 2019 （第一作者，CCF A类会议）
+
+\noindent[2] Xukun Cai, et al., Singing, Dancing, Rap, Basketball2. ABC. 2020
+
+
+\section*{申请发明专利}  
+
+\noindent[1]蔡徐坤。唱跳Rap篮球。PN: 20181000000.0
+
+%
+% ========================================
+%｜      TODO 获奖，参与科研项目           ｜
+% ========================================
+\section*{参与科研项目}  
+
+\noindent[1] 国家自然科学基金面上项目《******》（No.621******），2022.1-2025.12，第4位次
+
+\noindent[2] 山东省重点研发计划（公益类专项）项目《******》（No. 20******），2018.5-2020.4，第8位次
+
+
+\end{profile}
+
+
+\end{document}

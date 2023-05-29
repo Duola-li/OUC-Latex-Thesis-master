@@ -1,0 +1,9 @@
+.DS_Store
+words.count
+main.aux
+main.toc
+main.fdb_latexmk
+main.fls
+main.log
+missfont.log
+.texpadtmp/*
