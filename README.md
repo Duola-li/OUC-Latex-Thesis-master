@@ -28,3 +28,7 @@
 
 ![配置texstudio的两个命令为mytime.exe](https://github.com/Duola-li/OUC-Latex-Thesis-master/blob/main/Time_statistics/1.png)
 ![将mytime.exe添加到编译命令中](https://github.com/Duola-li/OUC-Latex-Thesis-master/blob/main/Time_statistics/2.png)
+
+
+### cleanbib.py
+去掉bib文件中多于项，找出重复引用，统计文献个数，近5年文献率。
