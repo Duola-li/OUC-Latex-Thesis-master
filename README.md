@@ -26,4 +26,5 @@
 
 编译时间统计及编译完成提示音功能，编写工具**mytime.exe**，首次执行记录开始编译时间，再次执行记录编译完成时间，并播放提示音。可在TexStudio中配置使用。首先将两个不使用的命令配置为mytime.exe，如SVN和SVNADMIN。然后再编译器命令前后分别加上SVN和SVNADMIN即可。
 
-
+![配置texstudio的两个命令为mytime.exe](https://github.com/Duola-li/OUC-Latex-Thesis-master/blob/main/Time_statistics/1.png)
+![将mytime.exe添加到编译命令中](https://github.com/Duola-li/OUC-Latex-Thesis-master/blob/main/Time_statistics/2.png)

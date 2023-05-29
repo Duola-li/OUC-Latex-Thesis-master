@@ -4,6 +4,8 @@ main.aux
 main.toc
 main.fdb_latexmk
 main.fls
+main.bbl
+main.blg
 main.log
 missfont.log
 .texpadtmp/*
